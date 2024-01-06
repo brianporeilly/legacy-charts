@@ -5,6 +5,8 @@
 # https://github.com/bjw-s/helm-charts/blob/7798202/charts/library/common/values.yaml
 #
 
+fullname: qbittorrent
+
 image:
   # -- image repository
   repository: ghcr.io/linuxserver/qbittorrent
