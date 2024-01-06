@@ -1,0 +1,25 @@
+apiVersion: v2
+name: qbittorrent
+description: A Helm chart for qbittorrent on Kubernetes
+
+type: application
+version: 0.1.0
+
+# renovate datasource=docker depName=ghcr.io/linuxserver/qbittorrent
+appVersion: "version-4.6.2-r0"
+
+maintainers:
+  - name: brianporeilly
+    email: brian@brianporeilly.com
+    url: https://github.com/brianporeilly
+
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    # NOTE: last version of common that supports k8s < 1.22
+    version: 0.2.2
+sources:
+  - https://github.com/qbittorrent/qBittorrent
+  - https://github.com/linuxserver/docker-qbittorrent
+
+annotations: {}
