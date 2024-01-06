@@ -9,7 +9,7 @@ version: 0.1.0
 appVersion: "version-4.6.2-r0"
 
 maintainers:
-  - name: Brian O'Reilly
+  - name: brianporeilly
     email: brian@brianporeilly.com
     url: https://github.com/brianporeilly
 
