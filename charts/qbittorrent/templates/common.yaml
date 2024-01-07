@@ -1,1 +1,1 @@
-{{ include "bjw-s.common.all" . }}
+{{ include "common._all" . }}
