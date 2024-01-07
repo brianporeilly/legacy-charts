@@ -3,7 +3,7 @@ name: qbittorrent
 description: A Helm chart for qbittorrent on Kubernetes
 
 type: application
-version: 0.1.1
+version: 0.1.2
 
 # renovate datasource=docker depName=ghcr.io/linuxserver/qbittorrent
 appVersion: "version-4.6.2-r0"
