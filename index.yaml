@@ -3,6 +3,27 @@ entries:
   qbittorrent:
   - apiVersion: v2
     appVersion: version-4.6.2-r0
+    created: "2024-01-07T07:51:17.191468524Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.2
+    description: A Helm chart for qbittorrent on Kubernetes
+    digest: 15e438ba8f4cda17f6483a4e660050b23737de68b6f8d6b699b2e00b64f025ac
+    maintainers:
+    - email: brian@brianporeilly.com
+      name: brianporeilly
+      url: https://github.com/brianporeilly
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/linuxserver/docker-qbittorrent
+    type: application
+    urls:
+    - https://github.com/brianporeilly/legacy-charts/releases/download/qbittorrent-0.1.7/qbittorrent-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: version-4.6.2-r0
     created: "2024-01-07T07:47:15.727395516Z"
     dependencies:
     - name: common
@@ -148,4 +169,4 @@ entries:
     urls:
     - https://github.com/brianporeilly/legacy-charts/releases/download/qbittorrent-0.1.0/qbittorrent-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-07T07:47:15.727427605Z"
+generated: "2024-01-07T07:51:17.191512085Z"
