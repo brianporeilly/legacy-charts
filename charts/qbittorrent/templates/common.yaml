@@ -1,1 +1,1 @@
-{{ include "common._all" . }}
+{{- include "common.values.setup" . }}
