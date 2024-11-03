@@ -1,0 +1,26 @@
+apiVersion: v2
+name: audiobookshelf
+description: A Helm chart for audiobookshelf on Kubernetes
+
+type: application
+version: 0.1.0
+
+# renovate datasource=docker depName=advplyr/audiobookshelf
+appVersion: "2.16.2"
+
+maintainers:
+  - name: brianporeilly
+    email: brian@brianporeilly.com
+    url: https://github.com/brianporeilly
+
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    # NOTE: last version of common that supports k8s < 1.22
+    version: 0.2.2
+
+sources:
+  - https://github.com/advplyr/audiobookshelf
+  - https://hub.docker.com/r/advplyr/audiobookshelf
+
+annotations: {}
