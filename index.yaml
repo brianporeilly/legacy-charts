@@ -3,6 +3,27 @@ entries:
   audiobookshelf:
   - apiVersion: v2
     appVersion: 2.16.2
+    created: "2024-11-03T22:56:49.265654608Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.2
+    description: A Helm chart for audiobookshelf on Kubernetes
+    digest: bfb21e1aa3981d6f612304f6a00f388cad6ec527a5ace0877b69d897ceb6b948
+    maintainers:
+    - email: brian@brianporeilly.com
+      name: brianporeilly
+      url: https://github.com/brianporeilly
+    name: audiobookshelf
+    sources:
+    - https://github.com/advplyr/audiobookshelf
+    - https://hub.docker.com/r/advplyr/audiobookshelf
+    type: application
+    urls:
+    - https://github.com/brianporeilly/legacy-charts/releases/download/audiobookshelf-0.1.1/audiobookshelf-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 2.16.2
     created: "2024-11-03T22:39:14.342405592Z"
     dependencies:
     - name: common
@@ -191,4 +212,4 @@ entries:
     urls:
     - https://github.com/brianporeilly/legacy-charts/releases/download/qbittorrent-0.1.0/qbittorrent-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-03T22:39:14.342428565Z"
+generated: "2024-11-03T22:56:49.265680325Z"
