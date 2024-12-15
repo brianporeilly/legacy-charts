@@ -1,0 +1,25 @@
+apiVersion: v2
+name: paperless-ngx
+description: A Helm chart for paperless-ngx on Kubernetes
+
+type: application
+version: 0.1.0
+
+# renovate datasource=docker depName=paperlessngx/paperless-ngx
+appVersion: "2.13.5"
+
+maintainers:
+  - name: brianporeilly
+    email: brian@brianporeilly.com
+    url: https://github.com/brianporeilly
+
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    # NOTE: last version of common that supports k8s < 1.22
+    version: 0.2.2
+
+sources:
+  - https://github.com/paperless-ngx/paperless-ngx
+
+annotations: {}

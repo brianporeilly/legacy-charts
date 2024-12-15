@@ -1,0 +1,62 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from the bjw-s common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/7798202/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: paperlessngx/paperless-ngx
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  tag: 2.13.5
+
+# -- environment variables. [[ref]](https://github.com/linuxserver/docker-qbittorrent#parameters)
+# @default -- See [values.yaml](./values.yaml)
+env:
+  # -- Set the container timezone
+  TZ: UTC
+
+# -- Configures service settings for the chart.
+# @default -- See [values.yaml](./values.yaml)
+service:
+  main:
+    ports:
+      http:
+        port: 8000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    enabled: false
+    # hosts:
+    #   - host: chart-example.local
+    #     paths:
+    #       - path: /
+    # tls:
+    #   - secretName: chart-example.local-tls
+    #     hosts:
+    #       - chart-example.local
+
+# -- Configure persistence settings for the chart under this key.
+# Set `enabled` to `true' to create persistant volumes for each of these.
+# @default -- See values.yaml
+persistence:
+  # Configuration files
+  data:
+    enabled: false
+    # retain: true
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
+
+  # Optional - Allows linking to an existing media library scraping location.
+  media:
+    enabled: false
+    # mountPath: /media
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 10Gi
