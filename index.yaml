@@ -233,4 +233,25 @@ entries:
     urls:
     - https://github.com/brianporeilly/legacy-charts/releases/download/qbittorrent-0.1.0/qbittorrent-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-15T07:36:59.275472537Z"
+  vaultwarden:
+  - apiVersion: v2
+    appVersion: 1.32.6
+    created: "2024-12-15T08:26:40.635375225Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.2
+    description: A Helm chart for vaultwarden
+    digest: e2b9c8905c1b05c05d12f83ffeb32549628547bc3b4e9af24df18b86de53116f
+    maintainers:
+    - email: brian@brianporeilly.com
+      name: brianporeilly
+      url: https://github.com/brianporeilly
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/brianporeilly/legacy-charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-12-15T08:26:40.635399691Z"
