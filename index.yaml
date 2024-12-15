@@ -43,6 +43,27 @@ entries:
     urls:
     - https://github.com/brianporeilly/legacy-charts/releases/download/audiobookshelf-0.1.0/audiobookshelf-0.1.0.tgz
     version: 0.1.0
+  paperless-ngx:
+  - apiVersion: v2
+    appVersion: 2.13.5
+    created: "2024-12-15T07:36:59.27542604Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.2
+    description: A Helm chart for paperless-ngx on Kubernetes
+    digest: 6672493206c5e777a2d91b20bb45d989897a20d3746b7fe2b0752906c633fc12
+    maintainers:
+    - email: brian@brianporeilly.com
+      name: brianporeilly
+      url: https://github.com/brianporeilly
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/brianporeilly/legacy-charts/releases/download/paperless-ngx-0.1.0/paperless-ngx-0.1.0.tgz
+    version: 0.1.0
   qbittorrent:
   - apiVersion: v2
     appVersion: version-4.6.2-r0
@@ -212,4 +233,4 @@ entries:
     urls:
     - https://github.com/brianporeilly/legacy-charts/releases/download/qbittorrent-0.1.0/qbittorrent-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-03T22:56:49.265680325Z"
+generated: "2024-12-15T07:36:59.275472537Z"
