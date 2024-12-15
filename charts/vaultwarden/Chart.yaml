@@ -1,0 +1,25 @@
+apiVersion: v2
+name: vaultwarden
+description: A Helm chart for vaultwarden
+
+type: application
+version: 0.1.0
+
+# renovate datasource=docker depName=vaultwarden/server
+appVersion: "1.32.6"
+
+maintainers:
+  - name: brianporeilly
+    email: brian@brianporeilly.com
+    url: https://github.com/brianporeilly
+
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    # NOTE: last version of common that supports k8s < 1.22
+    version: 0.2.2
+
+sources:
+  - https://github.com/dani-garcia/vaultwarden
+
+annotations: {}
